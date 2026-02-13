@@ -1,0 +1,83 @@
+{
+  "name": "pm-email-validator",
+  "version": "1.0.0",
+  "description": "The explainable email intelligence library. Not just valid/invalid - understand WHY with provider detection, canonical normalization, risk signals, and confidence scoring.",
+  "license": "MIT",
+  "author": "Abhishek Limbad",
+  "keywords": [
+    "email",
+    "validation",
+    "validator",
+    "email-validation",
+    "email-validator",
+    "disposable",
+    "temporary-email",
+    "smtp",
+    "mx",
+    "dns",
+    "typo",
+    "intelligence",
+    "provider-detection",
+    "canonical",
+    "role-email",
+    "gibberish-detection"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhisheklimbad/pm-email-validator.git"
+  },
+  "homepage": "https://github.com/abhisheklimbad/pm-email-validator#readme",
+  "bugs": {
+    "url": "https://github.com/abhisheklimbad/pm-email-validator/issues"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "pm-email-validator": "dist/pm-email-validator.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "bench": "node --loader ts-node/esm scripts/bench.ts",
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev:api": "node --loader ts-node/esm src/server.ts",
+    "prepublishOnly": "npm run typecheck && npm run build && npm run test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "eslint": "^8.57.0",
+    "express": "^4.19.2",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {}
+}
