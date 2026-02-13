@@ -19,6 +19,11 @@ This package answers the questions teams actually care about:
 - Is this risky for B2B outreach or user quality?
 - Why did we classify it this way?
 
+## Documentation
+
+- Quick usage and API: this README
+- Full code-flow guide: `docs/ARCHITECTURE.md`
+
 ## Features
 
 - Lean default response for fast production usage
