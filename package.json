@@ -24,11 +24,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhisheklimbad/pm-email-validator.git"
+    "url": "git+https://github.com/abhilimbad/pm-email-validator.git"
   },
-  "homepage": "https://github.com/abhisheklimbad/pm-email-validator#readme",
+  "homepage": "https://github.com/abhilimbad/pm-email-validator#readme",
   "bugs": {
-    "url": "https://github.com/abhisheklimbad/pm-email-validator/issues"
+    "url": "https://github.com/abhilimbad/pm-email-validator/issues"
   },
   "type": "module",
   "main": "dist/index.cjs",
